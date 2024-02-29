@@ -16,17 +16,12 @@ a {
 
 .limited-width {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-}
-
-.cars-to-appley{
-  margin-right: 170px;
+    width: 100%;
 }
 
 .property{
     display: flex;
-    width: 1103px;
     
 }
 
@@ -37,9 +32,9 @@ a {
 
 #page{
     background-image: url(/assets/img/header-banner.svg);
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 497px;
+    background-size: 100%;
+    background-position: 10p;
 }
 
 #page-header {
@@ -49,7 +44,6 @@ a {
     background-color: rgba(0, 0, 0, .4);
     height: 88px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
-
 }
 
 .choice-nav {
@@ -115,27 +109,23 @@ a {
     margin-right: 8px;
 }
 
-.car-pctrs{
-    width: 700px;
-}
-
-main {
+.cars-to-appley{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-start;
+    height: 588px;
 }
 
-main section .buy-property {
+.cars-to-appley  .buy-property {
     display: flex;
     flex-direction: column;
+    width: 422px;
     flex-basis: 50%;
     color: #fff;
-    width: 88px;
     font-size: 48px;
     font-weight: 600;
-    margin-top: 7px; 
-  
+    margin-top: 80px; 
+    margin-left: 120px;
 }
 
 .mbl-text{
@@ -146,7 +136,7 @@ main section .buy-property {
     width: 417px;
 }
 
-main section .buy-car {
+.cars-to-appley .buy-car {
     flex-basis: 70%;
 }
 
@@ -185,10 +175,12 @@ main section .buy-car {
 }
 
 .human-satisfaction{
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(135deg, #0072ED 0%, #9608C8 100%);
-  height: 440px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0072ED 0%, #9608C8 100%);
+    height: 440px;
 }
 
 .human-satisfaction  .human-security{
@@ -203,11 +195,9 @@ main section .buy-car {
 .human-satisfaction .buy-car-comfort{
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   width: 1200px;
   margin-top: 100px;
-  margin-left: 200px;
-  
 }
 
 .human-satisfaction .quality-car{
