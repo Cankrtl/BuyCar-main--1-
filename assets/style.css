@@ -20,9 +20,9 @@ a {
     width: 100%;
 }
 
-.property{
+.property {
     display: flex;
-    
+
 }
 
 .by-car-icon {
@@ -30,11 +30,10 @@ a {
     font-weight: 600;
 }
 
-#page{
+#page {
     background-image: url(/assets/img/header-banner.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 10p;
 }
 
 #page-header {
@@ -77,7 +76,7 @@ a {
 .nav-hamburger a::before {
     content: "";
     position: absolute;
-    display: block; 
+    display: block;
     width: 100%;
     height: 4px;
     top: 25px;
@@ -109,14 +108,14 @@ a {
     margin-right: 8px;
 }
 
-.cars-to-appley{
+.cars-to-appley {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     justify-content: flex-start;
     height: 588px;
 }
 
-.cars-to-appley  .buy-property {
+.cars-to-appley .buy-property {
     display: flex;
     flex-direction: column;
     width: 422px;
@@ -124,11 +123,11 @@ a {
     color: #fff;
     font-size: 48px;
     font-weight: 600;
-    margin-top: 80px; 
+    margin-top: 80px;
     margin-left: 120px;
 }
 
-.mbl-text{
+.mbl-text {
     margin-top: 40px;
     font-weight: 400;
     font-size: 24px;
@@ -140,16 +139,17 @@ a {
     flex-basis: 70%;
 }
 
-.buy-now{
+.buy-now {
     margin-top: 25px;
 }
-.buy-now a{
+
+.buy-now a {
     font-size: 16px;
     margin-left: 32px;
     cursor: pointer;
 }
 
-.contact-us{
+.contact-us {
     background-color: #0072ed;
     font-size: 16px;
     font-weight: 600;
@@ -160,21 +160,20 @@ a {
     cursor: pointer;
 }
 
-.more-further{
+.more-further {
     background-color: transparent;
     color: #fff;
     width: 150px;
     height: 55px;
 }
 
-.wheel{
-    position: relative;
-    bottom: 550px;
+.wheel {
+    position: absolute;
+    bottom: 153px;
     height: 184px;
-    right: 18px;
 }
 
-.human-satisfaction{
+.human-satisfaction {
     display: flex;
     text-align: center;
     align-items: center;
@@ -183,24 +182,24 @@ a {
     height: 440px;
 }
 
-.human-satisfaction  .human-security{
-  color: #fff;
- display: flex;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 600; 
-  margin-top: 80px;
+.human-satisfaction .human-security {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 80px;
 }
 
-.human-satisfaction .buy-car-comfort{
-  color: #fff;
-  display: flex;
-  justify-content:space-around;
-  width: 1200px;
-  margin-top: 100px;
+.human-satisfaction .buy-car-comfort {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin-top: 100px;
 }
 
-.human-satisfaction .quality-car{
+.human-satisfaction .quality-car {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -210,7 +209,42 @@ a {
     gap: 30px;
 }
 
-.page-footer{
-    border: 1px solid red;
-    background-color: #0072ed;
+.car-selection-title{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.car-selection-title .last-car{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.car-selection-title .look-collection-car{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #0072ED;
+    cursor: pointer;
+}   
+
+.car-model{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    margin-right: 55px;
+    margin-top: 40px;
+    flex-basis: 30%;
+}
+
+.suv-super-sport{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.suv-super-sport span{
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
 }
