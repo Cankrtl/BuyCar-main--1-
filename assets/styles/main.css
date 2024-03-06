@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr{
+  border: 1px solid #333333
+}
+
+
+.limited-width {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.property {
+  display: flex;
+
+}
+
+.by-car-icon {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#page {
+  background-image: url(/assets/img/header-banner.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#page-header {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, .4);
+  height: 88px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.choice-nav {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 120px;
+}
+
+.choice-nav img {
+  margin-right: 8px;
+}
+
+.nav-hamburger {
+  display: flex;
+  margin-left: 56px;
+  font-weight: 600;
+}
+
+.nav-hamburger a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+.nav-hamburger a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+}
+
+.nav-hamburger a:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 163px;
+  height: 40px;
+  background-color: #128C7E;
+  color: #fff;
+  margin-right: 120px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.btn-hamburger img {
+  margin-right: 8px;
+}
+
+.cars-to-appley {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  justify-content: flex-start;
+  height: 588px;
+}
+
+.cars-to-appley .buy-property {
+  display: flex;
+  flex-direction: column;
+  width: 422px;
+  flex-basis: 50%;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+.mbl-text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  width: 417px;
+}
+
+.cars-to-appley .buy-car {
+  flex-basis: 70%;
+}
+
+.buy-now {
+  margin-top: 25px;
+}
+
+.buy-now a {
+  font-size: 16px;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.contact-us {
+  background-color: #0072ed;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 4px;
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.more-further {
+  background-color: transparent;
+  color: #fff;
+  width: 150px;
+  height: 55px;
+}
+
+.wheel {
+  position: relative;
+  display: block;
+  bottom: 518px;
+  height: 184px;
+}
+
+.human-satisfaction {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0072ED 0%, #9608C8 100%);
+  height: 440px;
+}
+
+.human-satisfaction .human-security {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
+.human-satisfaction .buy-car-comfort {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin-top: 100px;
+}
+
+.human-satisfaction .quality-car {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  gap: 30px;
+}
+
+.car-collection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.car-selection-title {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.car-selection-title .last-car {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.car-selection-title .look-collection-car {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #0072ED;
+  cursor: pointer;
+}
+
+.car-model {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+.suv-super-sport {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.suv-super-sport span {
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.car-collection .slider-model {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+.car-collection .slider-model img {
+  margin-right: 50px;
+  width: 83px;
+}
+
+.card-question {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding-bottom: 80px;
+}
+
+.what-customers-say {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding-top: 80px;
+}
+
+.card {
+  background-color: #333333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+
+.card-question .card p {
+  font-size: 14px;
+  color: #E6E6E6;
+  margin-bottom: 12px;
+}
+
+.card-question .card h4 {
+  font-weight: 600;
+  color: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 16px 16px;
+}
+
+.car-to-buy {
+  display: flex;
+  justify-content: center;
+  background-image: url(/assets/img/911-porsche.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+}
+
+.car-to-buy-login{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-basis: 50%;
+  
+}
+
+.car-to-buy-login span{
+  margin: auto;
+  width: 575px;
+  line-height: 23px;
+}
+
+.car-to-buy-login a{
+  background-color: #0072ed;
+  border-radius: 4px;
+  margin: auto ;
+  margin-left: 24px;
+  width: 181px
+}
+
+.buy-car-footer{
+  border: 1px solid #1a1a1a;
+  height: 420px;
+  background-color: #1a1a1a;
+  color: #fff;
+  flex-basis: 50%;
+}
+
+.footer-container{
+  display: flex;
+  margin: 50px auto auto auto;
+  height: 250px;
+  width: 1035px;
+}
+
+.buy-car-footer .adress-email{
+  line-height: 20px;
+  flex-basis: 50%;
+  text-align: left;
+}
+.buy-car-footer .adress-email p {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.buy-car-footer .adress-email span{
+  font-size: 24px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.buy-car-footer .choice-container{
+  display: flex;
+  margin: auto auto auto 24px;
+}
+
+.buy-car-footer .choice-container .choice-1{
+  margin-left: 20px;
+}
+
+.buy-car-footer .choice-1 span{
+  font-size: 24px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.buy-car-footer .choice-1 p{
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.company-name-social-media{
+  display: flex;
+  justify-content: space-between;
+  width: 1035px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+.company-name-social-media .social-media{
+  display: flex;
+}
+
+.company-name-social-media .social-media-circle{
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  margin-left: 16px;
+  text-align: center;
+}
+
+.company-name-social-media .social-media-circle img{
+  width: 17px;
+  height: 19px;
+  margin-top: 10px;
+}
