@@ -22,12 +22,15 @@ hr{
 .limited-width {
   display: flex;
   justify-content: space-between;
+  padding-inline: 120px;
   width: 100%;
 }
 
 .property {
   display: flex;
-
+  align-items: center;
+  gap: 24px;
+  width: 100%;
 }
 
 .by-car-icon {
@@ -35,10 +38,12 @@ hr{
   font-weight: 600;
 }
 
-#page {
+.header-container {
   background-image: url(/assets/img/header-banner.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  max-width: 1440px;
+  margin: auto;
 }
 
 #page-header {
@@ -53,25 +58,27 @@ hr{
 .choice-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #fff;
-  margin-left: 120px;
+  gap: 16px;
+  /* margin-left: 120px; */
 }
 
-.choice-nav img {
-  margin-right: 8px;
+.choice-nav .nav-banner{
+  display: flex;
+  gap: 16px;
 }
 
 .nav-hamburger {
   display: flex;
-  margin-left: 56px;
   font-weight: 600;
+  gap: 16px;
 }
 
 .nav-hamburger a {
   position: relative;
   color: #fff;
   text-decoration: none;
-  margin-right: 32px;
 }
 
 .nav-hamburger a::before {
@@ -100,7 +107,6 @@ hr{
   height: 40px;
   background-color: #128C7E;
   color: #fff;
-  margin-right: 120px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -113,41 +119,38 @@ hr{
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   justify-content: flex-start;
-  height: 588px;
+  max-width: 1440px;
+  padding: 60px 120px;
 }
 
 .cars-to-appley .buy-property {
   display: flex;
   flex-direction: column;
-  width: 422px;
-  flex-basis: 50%;
   color: #fff;
   font-size: 48px;
   font-weight: 600;
-  margin-top: 80px;
-  margin-left: 120px;
+  max-width: 384px;
 }
 
 .mbl-text {
-  margin-top: 40px;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
-  width: 417px;
-}
-
-.cars-to-appley .buy-car {
-  flex-basis: 70%;
-}
-
-.buy-now {
-  margin-top: 25px;
 }
 
 .buy-now a {
   font-size: 16px;
-  margin-left: 32px;
   cursor: pointer;
+}
+
+.cars-to-appley .buy-car{
+  width: 792px;
+  height: 454px;
+}
+
+.cars-to-appley .buy-car img{
+  width: 100%;
+  height: 100%;
 }
 
 .contact-us {
@@ -168,20 +171,13 @@ hr{
   height: 55px;
 }
 
-.wheel {
-  position: relative;
-  display: block;
-  bottom: 518px;
-  height: 184px;
-}
-
 .human-satisfaction {
   display: flex;
-  text-align: center;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(135deg, #0072ED 0%, #9608C8 100%);
-  height: 440px;
+  padding: 120px 80px;
+  gap: 50px;
 }
 
 .human-satisfaction .human-security {
@@ -190,7 +186,6 @@ hr{
   justify-content: center;
   font-size: 32px;
   font-weight: 600;
-  margin-top: 80px;
 }
 
 .human-satisfaction .buy-car-comfort {
@@ -198,7 +193,6 @@ hr{
   display: flex;
   justify-content: space-around;
   width: 1200px;
-  margin-top: 100px;
 }
 
 .human-satisfaction .quality-car {
@@ -207,20 +201,22 @@ hr{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 300px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .car-collection {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 1440px;
+  padding-inline: 120px;
+  margin: auto;
+  padding-block: 40px;
 }
 
 .car-selection-title {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .car-selection-title .last-car {
@@ -238,21 +234,17 @@ hr{
 
 .car-model {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 40px;
-  margin: 0 auto;
+  justify-content: space-between;
+  padding-block: 40px;
 }
 
 .suv-super-sport {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 
 .suv-super-sport span {
-  margin-bottom: 20px;
   font-weight: 600;
   padding: 10px;
   cursor: pointer;
@@ -262,21 +254,20 @@ hr{
   display: flex;
   justify-content: center;
   width: 1200px;
-  margin-top: 50px;
   margin: 0 auto;
 }
 
-.car-collection .slider-model img {
+/* .car-collection .slider-model img {
   margin-right: 50px;
   width: 83px;
-}
+} */
 
 .card-question {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: center;
   background-color: #f2f2f2;
-  padding-bottom: 80px;
+  margin: auto;
+  gap: 16px;
 }
 
 .what-customers-say {
@@ -284,9 +275,7 @@ hr{
   justify-content: center;
   font-size: 32px;
   font-weight: 600;
-  margin-top: 20px;
   background-color: #f2f2f2;
-  padding-top: 80px;
 }
 
 .card {
@@ -295,15 +284,28 @@ hr{
   transition: 0.3s;
   width: 300px;
   border-radius: 10px;
-  margin-top: 20px;
   line-height: 24px;
-  margin-left: 10px;
+
+}
+
+.section-car-buy{
+  background-color: #f2f2f2;
+    padding-block: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .card-question .card p {
   font-size: 14px;
   color: #E6E6E6;
-  margin-bottom: 12px;
+
 }
 
 .card-question .card h4 {
@@ -325,15 +327,13 @@ hr{
   background-image: url(/assets/img/911-porsche.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 220px;
+  padding: 80px 120px;
 }
 
 .car-to-buy-login{
   display: flex;
   justify-content: center;
   color: #fff;
-  flex-basis: 50%;
-  
 }
 
 .car-to-buy-login span{
@@ -343,36 +343,30 @@ hr{
 }
 
 .car-to-buy-login a{
-  background-color: #0072ed;
-  border-radius: 4px;
-  margin: auto ;
-  margin-left: 24px;
-  width: 181px
+    background-color: #0072ed;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .buy-car-footer{
   border: 1px solid #1a1a1a;
-  height: 420px;
   background-color: #1a1a1a;
   color: #fff;
-  flex-basis: 50%;
 }
 
 .footer-container{
   display: flex;
   margin: 50px auto auto auto;
-  height: 250px;
   width: 1035px;
 }
 
 .buy-car-footer .adress-email{
   line-height: 20px;
-  flex-basis: 50%;
-  text-align: left;
 }
 .buy-car-footer .adress-email p {
   font-size: 13px;
-  margin-top: 20px;
 }
 
 .buy-car-footer .adress-email span{
@@ -407,6 +401,7 @@ hr{
   width: 1035px;
   margin: auto;
   margin-top: 40px;
+  align-items: center;
 }
 
 
@@ -418,11 +413,10 @@ hr{
   display: flex;
   justify-content: center;
   border-radius: 100px;
-  width: 40px;
-  height: 40px;
   background-color: #fff;
   margin-left: 16px;
-  text-align: center;
+  width: 40px;
+  height: 40px;
 }
 
 .company-name-social-media .social-media-circle img{
