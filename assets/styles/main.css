@@ -190,7 +190,8 @@ hr {
   color: #fff;
   display: flex;
   justify-content: space-around;
-  width: 1200px;
+  max-width: 1200px;
+  gap: 40px;
 }
 
 .human-satisfaction .quality-car {
@@ -420,6 +421,23 @@ hr {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 380px) {
+  .card-question{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .human-satisfaction .buy-car-comfort{
+    display: flex;
+    padding-inline: 0 !important;
+  }
+
+  .cars-to-appley{
+    display: flex;
+    padding: 0 100px !important;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .card-question{
     display: grid;
@@ -451,6 +469,7 @@ hr {
   .human-satisfaction .buy-car-comfort{
     width: 390px;
     gap: 10px;
+    padding-inline: 0;
   }
 
   .company-name-social-media{
@@ -496,6 +515,19 @@ hr {
 
   .human-satisfaction .buy-car-comfort{
     display: none;
+    padding-inline: 0 !important;
+  }
+
+  .header-container{
+    background-image: none;
+  }
+
+  #page-header{
+    background-color: #1a1a1a;
+  }
+  .cars-to-appley{
+    display: flex;
+    padding: 0px 100px !important;
   }
 }
 
@@ -566,6 +598,12 @@ hr {
   .footer-container{
     display: flex;
     flex-direction: column;
+    max-width: 700px;
+  }
+
+  .card-question{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -597,6 +635,11 @@ hr {
   .car-to-buy-login span{
     width: 245px;
   }
+
+  .human-satisfaction .buy-car-comfort{
+    padding-inline: 256px;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -612,6 +655,6 @@ hr {
 
 @media only screen and (max-width: 1300px) {
   .cars-to-appley {
-    padding: 20px 100px;
+    padding: 13px 100px;
   }
 }
