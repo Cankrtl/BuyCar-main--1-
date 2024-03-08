@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-hr{
+hr {
   border: 1px solid #333333
 }
 
@@ -28,7 +28,6 @@ hr{
 
 .property {
   display: flex;
-  align-items: center;
   gap: 24px;
   width: 100%;
 }
@@ -64,7 +63,7 @@ hr{
   /* margin-left: 120px; */
 }
 
-.choice-nav .nav-banner{
+.choice-nav .nav-banner {
   display: flex;
   gap: 16px;
 }
@@ -143,14 +142,13 @@ hr{
   cursor: pointer;
 }
 
-.cars-to-appley .buy-car{
+.cars-to-appley .buy-car {
   width: 792px;
   height: 454px;
 }
 
-.cars-to-appley .buy-car img{
+.cars-to-appley .buy-car img {
   width: 100%;
-  height: 100%;
 }
 
 .contact-us {
@@ -215,8 +213,9 @@ hr{
 }
 
 .car-selection-title {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .car-selection-title .last-car {
@@ -226,7 +225,6 @@ hr{
 
 .car-selection-title .look-collection-car {
   display: flex;
-  align-items: center;
   font-weight: 600;
   color: #0072ED;
   cursor: pointer;
@@ -253,7 +251,7 @@ hr{
 .car-collection .slider-model {
   display: flex;
   justify-content: center;
-  width: 1200px;
+  gap: 20px;
   margin: 0 auto;
 }
 
@@ -288,18 +286,18 @@ hr{
 
 }
 
-.section-car-buy{
+.section-car-buy {
   background-color: #f2f2f2;
-    padding-block: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
-.section-title{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .card-question .card p {
@@ -330,72 +328,69 @@ hr{
   padding: 80px 120px;
 }
 
-.car-to-buy-login{
+.car-to-buy-login {
   display: flex;
   justify-content: center;
   color: #fff;
 }
 
-.car-to-buy-login span{
+.car-to-buy-login span {
   margin: auto;
   width: 575px;
   line-height: 23px;
 }
 
-.car-to-buy-login a{
-    background-color: #0072ed;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.car-to-buy-login a {
+  background-color: #0072ed;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.buy-car-footer{
+.buy-car-footer {
   border: 1px solid #1a1a1a;
   background-color: #1a1a1a;
   color: #fff;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   margin: 50px auto auto auto;
   width: 1035px;
 }
 
-.buy-car-footer .adress-email{
+.buy-car-footer .adress-email {
   line-height: 20px;
 }
+
 .buy-car-footer .adress-email p {
   font-size: 13px;
 }
 
-.buy-car-footer .adress-email span{
+.buy-car-footer .adress-email span {
   font-size: 24px;
   font-weight: 700;
   color: #666666;
 }
 
-.buy-car-footer .choice-container{
+.buy-car-footer .choice-container {
   display: flex;
   margin: auto auto auto 24px;
 }
 
-.buy-car-footer .choice-container .choice-1{
-  margin-left: 20px;
-}
-
-.buy-car-footer .choice-1 span{
+.buy-car-footer .choice-1 span {
   font-size: 24px;
   font-weight: 700;
   color: #666666;
 }
 
-.buy-car-footer .choice-1 p{
+.buy-car-footer .choice-1 p {
   font-size: 13px;
   margin-top: 20px;
 }
 
-.company-name-social-media{
+.company-name-social-media {
   display: flex;
   justify-content: space-between;
   width: 1035px;
@@ -405,11 +400,11 @@ hr{
 }
 
 
-.company-name-social-media .social-media{
+.company-name-social-media .social-media {
   display: flex;
 }
 
-.company-name-social-media .social-media-circle{
+.company-name-social-media .social-media-circle {
   display: flex;
   justify-content: center;
   border-radius: 100px;
@@ -419,8 +414,204 @@ hr{
   height: 40px;
 }
 
-.company-name-social-media .social-media-circle img{
+.company-name-social-media .social-media-circle img {
   width: 17px;
   height: 19px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .card-question{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .car-to-buy-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .car-model img{
+    display: none;
+  }
+
+  .car-selection-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .human-satisfaction .human-security{
+    width: 290px;
+  }
+
+  .human-satisfaction .buy-car-comfort{
+    width: 390px;
+    gap: 10px;
+  }
+
+  .company-name-social-media{
+    width: auto;
+  }
+
+  .buy-car-footer .choice-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .buy-car-footer .adress-email{
+    display: flex;
+    flex-direction: column; 
+    width: 364px;
+    gap: 20px;
+  }
+
+  .footer-container{
+    display: flex;
+    width: 400px;
+  }
+  .buy-car-footer .choice-1 p{
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .property{
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+
+  .card-question{
+    display: grid;
+    grid-template-columns:auto;
+  }
+
+  .human-satisfaction .buy-car-comfort{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card-question{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+  }
+
+  .human-satisfaction .buy-car-comfort{
+    width: 580px;
+  }
+
+  .car-model img{
+    display: none;
+  }
+
+  .buy-car-footer .choice-container{
+    gap: 20px;
+    margin: 0;
+  }
+  .buy-car-footer .adress-email{
+    display: flex;
+    line-height: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cars-to-appley .buy-property {
+    font-size: 27px;
+  }
+
+  .buy-now {
+    display: none;
+  }
+
+  .company-name-social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 20px;
+    width: auto;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .human-satisfaction .buy-car-comfort{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1073px) {
+  .cars-to-appley .buy-property {
+    font-size: 27px;
+  }
+
+  .cars-to-appley .buy-car {
+    height: 324px;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+
+  .car-model {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .car-to-buy-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .car-to-buy-login span{
+    width: 245px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cars-to-appley {
+    padding: 0 100px;
+  }
+
+  .car-collection .slider-model {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .cars-to-appley {
+    padding: 20px 100px;
+  }
 }
